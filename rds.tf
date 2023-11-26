@@ -1,7 +1,7 @@
 #### RDS ####
 resource "aws_db_subnet_group" "three-tier-db-sub-grp" {
   name       = "three-tier-db-sub-grp"
-  subnet_ids = ["${aws_subnet.three-tier-pvt-sub-3.id}","${aws_subnet.three-tier-pvt-sub-4.id}"]
+  subnet_ids = ["${aws_subnet.three-tier-pvt-sub-3.id}"]
 }
 
 resource "aws_db_instance" "three-tier-db" {
